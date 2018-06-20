@@ -8,6 +8,9 @@ CONTOUR = 'CONTOUR'
 
 ACCEPT_SHAPE = [CIRCLE, CONTOUR]
 
+# 將「位於畫面中間」定義為水平方向 40~60% 之間
+CENTER_RANGE = [0.4, 0.6]
+
 """ 畫面中視為在爪子範圍內的矩形（[x位置, y位置, 寬, 高]，單位為佔畫面長寬百分比） """
 DEFAULT_CATCH_ZONE = [ .5, .7, .1, .1 ]
 
@@ -147,6 +150,3 @@ class ColorShapeTracker:
         else:
             x, y = target
             return cv2.circle(img, (x, y), 1, (0, 0, 255), 10)
-
-    def __str__(self):
-        return 'Tracker({0}, target={1}, {2})'.format(self.frame, self.target)
