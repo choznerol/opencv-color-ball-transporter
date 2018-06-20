@@ -20,7 +20,10 @@ class ColorShapeTracker:
             self.shape = shape
         else:
             raise ValueError('目前支援的形狀只有：', ACCEPT_SHAPE)
-        self.cap = cv2.VideoCapture(device)
+        cap = cv2.VideoCapture(device)
+        if not cap.isOpened():
+            cap.open(device)
+        self.cap = cap
         self.frame = None
         self.target_hue = [from_hue, to_hue]
 
