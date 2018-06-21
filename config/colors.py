@@ -9,7 +9,7 @@ BALL_COLOR_HSV_RANGE = {
     # "RED": [np.array([0, 50, 50]), np.array([10, 255, 255])],  # FIXME: 會被覆蓋
     "RED": [np.array([170, 50, 50]), np.array([190, 255, 255])],
     # Yellow's hue is 0
-    "YELLOW": [np.array([80, 50, 50]), np.array([90, 255, 255])],
+    "YELLOW": [np.array([15, 50, 50]), np.array([25, 255, 255])],
     # Purple's hue is 0
     "PURPLE": [np.array([150, 50, 50]), np.array([165, 255, 255])]
 }
@@ -23,7 +23,7 @@ DEST_COLOR_HSV_RANGE = {
     # "RED": [np.array([0, 50, 50]), np.array([10, 255, 255])],  # FIXME: 會被覆蓋
     "RED": [np.array([170, 50, 50]), np.array([190, 255, 255])],
     # Yellow's hue is 0
-    "YELLOW": [np.array([80, 50, 50]), np.array([90, 255, 255])],
+    "YELLOW": [np.array([15, 50, 50]), np.array([25, 255, 255])],
     # Purple's hue is 0
     "PURPLE": [np.array([150, 50, 50]), np.array([165, 255, 255])]
 }
